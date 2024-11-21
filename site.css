@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap');
+
+/* Use of advanced technique: pseudo-classes*/
+
+:root {
+    /* Use of advanced techniques: Custom Properties and Gradients */
+
+    /* main colors/gradients */
+
+    --mainDark: #141414;
+    --secondaryDark: #232323;
+    --mainLight: #e0e0e0;
+    --mainShadow: #14141472;
+    --mainGradient: linear-gradient(45deg, #141414FA, #232323FA, #141414FA);
+
+    /* accent colors */
+
+    --Purple: #5d3a9b;
+    --Teel: #4a6e8c;
+    --Green: #a3b18a;
+}
+
+* {
+    box-sizing: border-box;}
+
+/* Use of advanced technique: Advanced Combinator ">" throughout the script. */
+
+body {
+    background-color: var(--mainDark);
+    margin: 0;
+    padding: 0;
+
+    #shop {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;    }
+    .aboutusimg {
+        display: flex;
+        flex-direction: column;    }
+    table {
+        display: block;
+        text-align: center;
+        td {
+            size: 25vw; } }
+    .desktop {
+        display: none;   }
+    .pannel {
+        display: block;
+        border-radius: 25px;
+        box-shadow: 2px 4px 10px var(--mainShadow);
+        border: 10px solid var(--Purple);
+        background-color: var(--Purple);
+        margin: 2vw 2vw;
+        &:hover {
+            border: 10px solid var(--Teel);
+            background-color: var(--Teel);
+            transform: scale(1.1);        }
+        &:active {
+            border: 10px solid var(--Green);
+            background-color: var(--Green);
+            transform: scale(0.9);        }
+        p {
+            font-size: large;
+            margin: 0;
+            padding: 0;
+            margin-left: 10px;
+            color: #e0e0e0;
+            text-decoration: none;        }    }
+    #banner {
+        background: var(--mainGradient), url('../Images/the-blowup-Gsp5HcMAYWU-unsplash.jpg');
+        background-size: cover;
+        box-shadow: inset 0 -20px 30px var(--mainShadow);
+        width: 100%;
+        margin: 0;
+        padding: 0;
+
+        /* Use of advanced technique: clamp() */
+
+        font-family: 'Sen', sans-serif;
+        font-size: clamp(0.5rem, 1vw + 0.3rem, 1.2rem);
+        text-align: center;
+        color: var(--mainLight);
+        box-shadow: 2px 4px 10px var(--mainShadow);
+        img {
+            width: 30%;
+            height: auto;        }
+        nav {
+            font-size: clamp(0.8rem, 1vw + 0.3rem, 1.2rem);
+            padding: 1rem;
+            word-spacing: 0.1rem;
+            a {
+                color: var(--Purple);
+                font-family: 'Sen', sans-serif;            }
+            >ul {
+
+                /* Use of advanced technique: Grid */
+
+                display: grid;
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                grid-auto-flow: column;
+                justify-content: left;
+                >li {
+                    padding: 0 10px;                }            }
+            a:hover {
+
+                /* Use of advanced technique: pseudo-classes*/
+
+                color: var(--Green);
+                font-weight: bold;            }
+
+            a:active {
+
+                /* Use of advanced technique: pseudo-classes*/
+
+                color: var(--Teel); }}}}
+.button {
+    display: block;
+    padding: 10px 20px;
+    width: clamp(150px, 12vw, 300px);
+    background-color: var(--mainDark);
+    color: var(--mainLight);
+    border: 5px solid var(--Teel);
+    border-radius: 8px;
+    box-shadow: 2px 4px 10px var(--mainShadow);
+    margin: 0px auto;
+    font-size: clamp(0.9rem, 1vw + 0.3rem, 1.2rem);
+    &:hover {
+
+        /* Use of advanced technique: pseudo-classes*/
+
+        color: var(--Green);
+        font-weight: bold;
+        transform: scale(1.1);
+
+        /* Use of advanced technique: transform*/    }
+    &:active {
+
+        /* Use of advanced technique: pseudo-classes*/
+
+        color: var(--Teel);
+        transform: scale(0.9);
+
+        /* Use of advanced technique: transform*/    }}
+.content {
+
+    color: var(--mainLight);
+    font-family: 'Sen', sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+    .pannel img {
+        border-radius: 25px;
+        box-shadow: inset 2px 4px 20px var(--mainShadow);    }
+    >img,
+    article.aboutusimg img {
+        width: 40vw;
+        height: auto;
+        padding: 5px;    }
+
+    .text {
+        padding: 0 5%;    }}
+.highlight {
+    color: var(--Green);}
+
+
+footer {
+
+    /* Use of advanced technique: clamp()*/
+
+    text-align: center;
+    font-size: clamp(1rem, 1vw + 0.3rem, 1.2rem);
+    a {
+        color: var(--mainLight);
+        margin: 0px auto;
+        padding-bottom: 5px;    }
+        a:hover {
+
+        /* Use of advanced technique: pseudo-classes*/
+
+        color: var(--Green);
+        font-weight: bold;   }
+    a:active {
+
+        /* Use of advanced technique: pseudo-classes*/
+
+        color: var(--Teel);    }
+    address {
+
+        /* Use of advanced technique: clamp()*/
+
+        font-family: 'Sen', sans-serif;
+        color: var(--mainLight);
+        font-size: clamp(0.1rem, 1vw + 0.3rem, 1.2rem);    }
+    small {
+
+        /* Use of advanced technique: clamp()*/
+
+        font-family: 'Sen', sans-serif;
+        color: var(--mainLight);
+        font-size: clamp(0.1rem, 1vw + 0.2rem, 1.2rem);    }
+
+    .imageCredits {
+        margin-top: 20px;    }}
+#shop {
+    flex-direction: row;}
+
+
+header {
+    padding-bottom: 2px;}
+nav {
+
+    /* Use of advanced technique: Flex*/
+
+    display: flex;
+    justify-content: center;
+    >ul {
+        >li {
+
+            font-weight: bold;
+            padding: 0.5rem;
+            word-spacing: 0.1rem;        }
+        >li:nth-of-type(5) {
+
+            /* Use of advanced technique: pseudo-classes*/
+
+            display: none;}}}
+#banner nav ul {
+    font-size: 125%;}
+@media (min-width: 768px) {
+    #hours {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-self: center;
+        align-self: center;}
+    body {
+        #hours {
+            img {
+                padding: 0;
+                margin: 0;}}
+        #shop {
+            flex-direction: row;
+            display: flex;
+            justify-content: center;}
+        #banner nav {
+
+            /* Use of advanced technique: Flex*/
+
+            display: flex;
+            justify-content: left;
+            >ul {
+                >li {
+                    font-weight: bold;
+                    padding: 0.5rem;
+                    word-spacing: 0.1rem;}
+                >li:nth-of-type(3) {
+
+                    /* Use of advanced technique: pseudo-classes*/
+
+                    display: block;}
+                >li:nth-of-type(5) {
+
+                    /* Use of advanced technique: pseudo-classes*/
+
+                    display: block;}}}
+        .mobile {
+            display: none;}
+        .desktop {
+            display: block;}}
+    article.content {
+        img {
+            width: 25vw;
+            height: auto;}}
+    #shop img {
+        width: 25vw;}}
+.bottomNav {
+    a {
+        font-family: 'Times New Roman', serif;}
+    >ul {
+        display: grid;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        grid-auto-flow: column;
+        justify-content: center;
+
+        /* Use of advanced technique: Flex*/
+
+        >li {
+            padding: 0 10px;
+            font-weight: normal;}
+        >li:nth-of-type(3) {
+
+            /* Use of advanced technique: pseudo-classes*/
+
+            display: block;
+}
+
+        >li:nth-of-type(5) {
+
+            /* Use of advanced technique: pseudo-classes*/
+
+            display: block;
+        }
+    }
+}
+
+.pannel img {
+    width: 70vw;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1 1 1;
+    img {
+        justify-self: right;
+    }
+}
+
+#hours {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+img.homepage {
+    margin: 2vw;
+}
+
+img.homepage:nth-of-type(1) {
+    float: right;
+}
+.video {
+    float: right;
+    overflow: hidden;
+}
+
+.video iframe {
+    display: flex;
+    align-self: center;
+}
