@@ -40,6 +40,7 @@ body {
     table {
         display: block;
         text-align: center;
+vertical-align: center;
         td {
             size: 25vw; } }
     .desktop {
