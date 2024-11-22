@@ -230,7 +230,7 @@ nav {
 @media (min-width: 768px) {
     #hours {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
         justify-self: center;
         align-self: center;}
     body {
