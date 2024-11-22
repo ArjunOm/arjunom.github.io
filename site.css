@@ -154,7 +154,7 @@ body {
         box-shadow: inset 2px 4px 20px var(--mainShadow);    }
     >img,
     article.aboutusimg img {
-        width: 40vw;
+        width: 60vw;
         height: auto;
         padding: 5px;    }
 
