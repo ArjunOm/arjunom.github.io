@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap');
+
+* {
+
+    font-family: 'Sen', sans-serif;
+    color: #e0e0e0;
+
+}
+
+img.testemonials {
+
+    width: 20vw;
+    height: auto;
+    border-radius: 25px;
+    display: flex;
+    align-self: center;
+
+}
+
+img.testemonials:hover {
+
+    transform: scale(1.1);
+
+}
+
+main {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    padding: 90px;
+}
+
+.description {
+
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    align-items: center;
+
+}
+
+.row {
+
+    text-align: center;
+    align-self: center;
+    margin: 0;
+    padding: 1vw;
+
+}
+
+.row:hover {
+
+    transform: scale(1.1);
+
+}
